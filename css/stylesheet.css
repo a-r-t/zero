@@ -15,7 +15,7 @@ body {
 	background: #15141A url("../assets/images/chain-link.jpg") no-repeat right top;
 }
 
-navbar {
+nav {
 	font-family:'top_secretsans';
 	background-color: #31253D;
 }
@@ -41,4 +41,8 @@ li a {
 
 h1 {
 	font-size: 3em;
+}
+
+.z-green {
+	color:#A6B556;
 }
