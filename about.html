@@ -49,33 +49,86 @@
 </head>
 
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar z-green"></span>
+        <span class="icon-bar z-green"></span>
+        <span class="icon-bar z-green"></span>                        
+      </button>
       <a class="navbar-brand z-green" href="#">Z.E.R.O.</a>
     </div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="news.html">News</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-	<ul class="nav navbar-inverse navbar-right z-green">
-      <li><a href="#"><span class="glyphicon glyphicon-user z-green"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in z-green"></span> Login</a></li>
-    </ul>
+	<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-inverse navbar-left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li class="active"><a href="about.html">About</a></li>
+		<li><a href="calendar.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+	  <ul class="nav navbar-inverse navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user z-green"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in z-green"></span> Login</a></li>
+      </ul>
+	</div>
 </div>
 </nav>
+<div class="container-fluid" style="margin-top:50px">
+  <div class="page-header text-center">
+	<img class="resize" src="assets/images/ZERO_Bio_low.png" alt="Zombie Biohazard Logo">
+	<h1>About Z.E.R.O.</h1>
+  </div>
+  <div class="text-center">
+	<h3>Words</h3>
+  </div>
+</div>
 <div class="container-fluid">
   <div class="row">
-	<div class="col-sm-4"><h1>About Z.E.R.O.</h1></div>
+	<div class="col-sm-6">
+      <img class="about float-left" src="/assets/images/steve.jpg" alt="Steve Kirsch">
+	</div>
+	<div class="col-sm-6">
+	  <h3 class="text-center">Steve Kirsch</h3>
+	  <p>Steve drinks Red Bull</p>
+	</div>
   </div>
-  Words
-  <img class="img-responsive" src="/assets/images/steve.jpg" alt="Steve Kirsch">
-  <img class="img-responsive" src="/assets/images/scott.jpg" alt="Scott Falconer">
-  <img class="img-responsive" src="/assets/images/matt.jpg" alt="Matt Hutchinson">
-  <img class="img-responsive" src="/assets/images/mitch.jpg" alt="Mitch Zander">
-  <img class="img-responsive" src="/assets/images/dave.jpg" alt="Dave Brewer">
+  <div class="row">
+	<div class="col-sm-6">
+	  <h3 class="text-center">Scott Falconer</h3>
+	  <p>Steve drinks Red Bull</p>
+	</div>
+	<div class="col-sm-6">
+      <img class="about float-right" src="/assets/images/scott.jpg" alt="Scott Falconer">
+	</div>
+  </div>
+  <div class="row">
+	<div class="col-sm-6">
+      <img class="about float-left" src="/assets/images/matt.jpg" alt="Matt Hutchinson">
+	</div>
+	<div class="col-sm-6">
+	  <h3 class="text-center">Matt Hutchinson</h3>
+	  <p>Steve drinks Red Bull</p>
+	</div>
+  </div>
+  <div class="row">
+	<div class="col-sm-6">
+	  <h3> Bass - Mitch Zander</h3>
+	  <p>Words</p>
+	</div>
+	<div class="col-sm-6">
+	  <img class="about float-right" src="/assets/images/mitch.jpg" alt="Mitch Zander">
+	</div>
+  </div>
+  <div class="row">
+	<div class="col-sm-6">
+      <img class="about float-left" src="/assets/images/dave.jpg" alt="Dave Brewer">
+	</div>
+	<div class="col-sm-6">
+	  <h3 class="text-center">Dave Brewer</h3>
+	  <p>Words</p>
+	</div>
+  </div>
 </div>
 </body>
 </html>
