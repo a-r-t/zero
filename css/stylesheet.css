@@ -8,13 +8,26 @@
 
 }
 
+html {
+    background: #15141A url("../assets/images/chain-link.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
 	font-family:'top_secretsans';
 	color:#A6B556;
 	font-size: 100%;
-	background: #15141A url("../assets/images/chain-link.jpg") no-repeat right top;
-	background-size: cover
+	background:transparent;
 }
+
+div.row {
+  background-color: rgba(49, 37, 61, 0.9);
+  padding: 10px;
+  margin: 10px;
+    }
 
 nav {
 	font-family:'top_secretsans';
