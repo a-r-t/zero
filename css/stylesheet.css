@@ -9,7 +9,7 @@
 }
 
 html {
-    background: #15141A url("../assets/images/chain-link.jpg") no-repeat center center fixed;
+    background: #15141A url("../assets/images/chainlink_xl.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -31,7 +31,7 @@ div.row {
 
 nav {
 	font-family:'top_secretsans';
-	background-color:#31253D;
+	background-color:#15141A;
 }
 
 ul {
@@ -46,7 +46,7 @@ li {
 
 li a {
 	color:#A6B556;
-	background-color:#31253D;
+	background-color:#15141A;
 	font-size: 1.5em;
     padding: 14px 16px;
 }
