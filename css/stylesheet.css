@@ -81,22 +81,14 @@ img.page-title {
 	padding:0px;
 }
 
-div.page-title-text {
-	font-size: 3.1em;
-	position:absolute;
-	top:50%;
-	left: 35%;
-	width: 30%;
-	background-color:#15141A;
+img.about {
+    width: 400px; 
+    height: auto;
+	padding:0px;	
 }
 
 div.page-footer {
 	background-color:#15141A;
-}
-
-img.about {
-    width:100%; 
-    height: auto;
 }
 
 .z-green {
