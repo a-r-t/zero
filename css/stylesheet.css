@@ -23,12 +23,6 @@ body {
 	background:transparent;
 }
 
-div.row {
-  background-color: rgba(49, 37, 61, 0.9);
-  padding: 10px;
-  margin: 10px;
-    }
-
 nav {
 	font-family:'top_secretsans';
 	background-color:#15141A;
@@ -53,6 +47,13 @@ li a {
 
 h1 {
 	font-size: 3em;
+}
+
+.black-background {
+	background-color: rgba(0,0,0,0.9);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 25px;
 }
 
 img.resize {
