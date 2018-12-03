@@ -15,74 +15,51 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  
     <title>ZERO Home</title>
-	<link rel="stylesheet" href="css/index-stylesheet.css">
-<link rel="shortcut icon" href="assets/images/ZERO_Bio_low.png" type="image/x-icon">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#63203F">
-<meta name="msapplication-TileColor" content="#A7323B">
-<meta name="theme-color" content="#DBD7D7">
-
-<!-- Google Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-130203027-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-130203027-1');
-</script>
-
-<!-- /Google Analytics -->
-</head>
-<body bgcolor="#000000">
-<!-- Navbar -->
-<div class="container">
-  <nav class="navbar navbar-fixed-top">
-    <div class="container-fluid">
-	<!-- Hamburger -->
-      <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"> 
-		<span class="icon-bar z-green"></span> 
-		<span class="icon-bar z-green"></span> 
-		<span class="icon-bar z-green"></span> 
-	  </button>
-      <a class="navbar-brand z-green" href="#">Z.E.R.O.</a> 
-	  </div>
-	<!-- End Hamburger -->
-		
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-inverse navbar-nav navbar-left">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="calendar.html">Events</a></li>
-        <li><a href="media.html">Media</a></li>
-		<li><a href="about.html">About</a></li>
-      </ul>
-      <ul class="nav navbar-inverse navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user z-green"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in z-green"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</div>
-<!-- End Navbar -->
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="shortcut icon" href="assets/images/favicon-96x96.png" type="image/x-icon">
+  </head>
+  <body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Hamburger -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="icon-bar z-green"></span> 				
+					<span class="icon-bar z-green"></span> 
+					<span class="icon-bar z-green"></span> 
+				</button>
+				<a class="navbar-brand z-green" href="#">Z.E.R.O.</a> 
+			</div>
+			<!-- End Hamburger -->
+			<div class="navbar-collapse collapse" id="navbar">
+				<ul class="nav navbar-inverse navbar-nav navbar-left">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="news.html">News</a></li>
+					<li class="active"><a href="about.html">About</a></li>
+					<li><a href="calendar.html">Events</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-inverse navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user z-green"></span> Sign Up</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in z-green"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Navbar -->
 	<div align="center" width="100%" class="container-fluid" style="padding:0px;">
 		<img src="assets/images/zombie_community_red_banner-transparent.png" alt="ZERO Banner" width="100%" style="margin-top:50px">
 	</div>
-	<div class="container-fluid" align="center">
-		<h1>Music</h1>
+	<div class="container-fluid black-background" align="center">
 		<div class="row" align="center">
-			<div class="col-sm-3 col-sm-offset-3" style="background-color:#000000;margin-bottom:50px;">
+			<h1 style="text-align:center;">Music</h1>
+			<div class="col-sm-3 col-sm-offset-3" style="margin-bottom:50px;">
 				<h2>Check out our newest album available now!</h2>
 				<h3 style="margin-top:30px;">Division 666</h3>
 				<img src="assets/images/zero-album-cover-1.png" alt="ZERO Album 1" class="img-responsive">
 			</div>
-			<div class="col-sm-3" style="background-color:#000000;margin-bottom:30px;">
+			<div class="col-sm-3" style="margin-bottom:30px;">
 				<h2>Listen to our newest singles!</h2>
 				<h3 style="margin-top:30px;">Tom Foolery</h3>
 				<audio controls>
@@ -103,15 +80,13 @@
 		</div>
 		<button type="button" class="btn btn-danger btn-lg" style="margin-bottom:30px;">Visit our Music page!</button>
 	</div>
-	<hr>
-	<div class="container-fluid" align="center">
-		<h1>Community Affiliations</h1>
+	<div class="container-fluid black-background" align="center">
 		<div class="row" style="margin-bottom:30px;">
 			<h2>CPR Training</h2>
 			<div class="col-sm-3 col-sm-offset-3" style="background-color:#000000;">
 				<img src="assets/images/cpr-training-1.jpg" alt="CPR Training 1" class="img-responsive">
 			</div>
-			<div class="col-sm-3" style="background-color:#000000;">
+			<div class="col-sm-3">
 				<img src="assets/images/cpr-training-2.jpg" alt="CPR Training 2" class="img-responsive">
 			</div>
 		</div>
@@ -120,7 +95,7 @@
 			<div class="col-sm-3 col-sm-offset-3" style="background-color:#000000;">
 				<img src="assets/images/emt-training-1.jpg" alt="EMT Training 1" class="img-responsive">
 			</div>
-			<div class="col-sm-3" style="background-color:#000000;">
+			<div class="col-sm-3">
 				<img src="assets/images/emt-training-2.jpg" alt="EMT Training 2" class="img-responsive">
 			</div>
 		</div>
@@ -129,7 +104,7 @@
 			<div class="col-sm-3 col-sm-offset-3" style="background-color:#000000;">
 				<img src="assets/images/zombie-survival-training-1.jpg" alt="Zombie Survival Training 1" class="img-responsive">
 			</div>
-			<div class="col-sm-3" style="background-color:#000000;">
+			<div class="col-sm-3">
 				<img src="assets/images/zombie-survival-training-2.jpg" alt="Zombie Survival Training 2" class="img-responsive">
 			</div>
 		</div>
@@ -147,6 +122,7 @@
           <a href="#"><i class="fa fa-twitter-square z-green" style=" padding:5px 15px 10px;"></i></a>
         </div>
       </div>
+
 	</div>
 <!-- end footer -->
   </body>
