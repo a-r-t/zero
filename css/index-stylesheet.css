@@ -8,16 +8,24 @@
 
 }
 
+html {
+    background: #15141A url("../assets/images/chainlink_xl.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
 	font-family:'top_secretsans';
 	color:#A6B556;
 	font-size: 100%;
-	background: #000000
+	background: transparent
 }
 
 nav {
 	font-family:'top_secretsans';
-	background-color: #31253D;
+	background-color:#15141A;
 }
 
 ul {

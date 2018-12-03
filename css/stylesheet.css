@@ -74,14 +74,16 @@ img.page-title {
 	margin-right:auto;
     width: 260px; 
     height: auto;
+	padding:0px;
 }
 
 div.page-title-text {
-	font-size: 3.2em;
+	font-size: 3.1em;
 	position:absolute;
 	top:50%;
-	left: 0;
-	width: 100%;
+	left: 35%;
+	width: 30%;
+	background-color:#15141A;
 }
 
 div.page-footer {
