@@ -36,7 +36,11 @@ nav {
 }
 
 .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #15141A;
+}
+
+.navbar-inverse .navbar-nav > .active > li > a {
+    background-color: #444348;
 }
 
 ul {
