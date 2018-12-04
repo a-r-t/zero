@@ -119,3 +119,11 @@ div.page-footer {
 .no-padding {
 	padding:0px;
 }
+
+.archive {
+	width:50%;
+	background-color:green;
+	border-color:black;
+	color:white;
+	font-size:18px;	
+}
