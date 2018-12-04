@@ -8,6 +8,7 @@
 
 }
 
+
 html {
     background: #15141A url("../assets/images/chainlink.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -119,11 +120,8 @@ div.page-footer {
 .archive {
 	color:white;
 	width:50%;
-	background-color:green;
 	border-color:black;
-	font-size:18px;	
+	font-size:18px;
 }
 
-.list-group-item-hover:hover {
-	background-color:red;
-}
+
