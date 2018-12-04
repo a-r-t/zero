@@ -1,9 +1,12 @@
+// function to validate and send contact form data
 function sendMessage() {
 	$('#messageToUser').text('');
 	var isDataValid = true;
 	var name = $("#contactName").val();
 	var email = $("#contactEmail").val();
 	var message = $("#contactMessage").val();
+	
+	// validate form data -- if anything is invalid, user is displayed text of error message
 	if (name === "") {
 		$('#messageToUser').text("Name field must be filled out!");
 		isDataValid = false;
@@ -24,6 +27,8 @@ function sendMessage() {
 		isDataValid = false;
 		$('#messageToUser').css("color","red");
 	}
+	
+	// if form data is all valid, notify user that text was successfully sent and clean textboxes
 	if (isDataValid) {
 		$('#contactName').val('');
 		$('#contactEmail').val('');
