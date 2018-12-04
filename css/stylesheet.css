@@ -40,17 +40,13 @@ nav {
     background-color: #444348;
 }
 
-ul {
+.nb-ul {
 	list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li {
-	float: left;
-}
-
-li a {
+.nb-a {
 	color:#A6B556;
 	background-color:#15141A;
 	font-size: 1.5em;
