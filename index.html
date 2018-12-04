@@ -17,6 +17,8 @@
 
 <!-- Local assets -->
 <link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/audio.css">
+
 <meta name="description" content="Meet the band!">
 <title>Z.E.R.O.</title>
 <link rel="shortcut icon" href="assets/images/ZERO_Bio_low.png" type="image/x-icon">
@@ -87,7 +89,7 @@
 					<img src="assets/images/zero-album-cover-1.png" alt="ZERO Album 1" class="img-responsive">
 				</div>
 				<div class="col-sm-3" style="margin-bottom:30px;">
-					<h2>Listen to our newest singles!</h2>
+					<h2>Listen to our newest hit singles!</h2>
 					<h3 style="margin-top:30px;">Tom Foolery</h3>
 					<audio controls>
 						<source src="assets/music/Tom_Foolery.mp3" type="audio/mpeg">
@@ -193,5 +195,7 @@
 	</div>
 	<!-- end footer -->
 	<script src="contact.js"></script>
+	<script src="audio.js"></script>
+	<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
   </body>
 </html>
