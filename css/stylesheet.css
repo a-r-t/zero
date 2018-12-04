@@ -8,6 +8,7 @@
 
 }
 
+
 html {
     background: #15141A url("../assets/images/chainlink.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -116,3 +117,12 @@ div.page-footer {
 .no-padding {
 	padding:0px;
 }
+
+.archive {
+	color:white;
+	width:50%;
+	border-color:black;
+	font-size:18px;
+}
+
+
