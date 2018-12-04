@@ -37,7 +37,8 @@ nav {
     background-color: #fff;
 }
 
-.navbar-inverse .navbar-nav > .active > li > a {
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	color:#15141A;
     background-color: #444348;
 }
 
