@@ -117,9 +117,13 @@ div.page-footer {
 }
 
 .archive {
+	color:white;
 	width:50%;
 	background-color:green;
 	border-color:black;
-	color:white;
 	font-size:18px;	
+}
+
+.list-group-item-hover:hover {
+	background-color:red;
 }
