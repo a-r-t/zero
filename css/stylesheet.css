@@ -9,7 +9,7 @@
 }
 
 html {
-    background: #15141A url("../assets/images/chainlink_xl.jpg") no-repeat center center fixed;
+    background: #15141A url("../assets/images/chainlink.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -27,11 +27,20 @@ div.row {
   background-color: rgba(49, 37, 61, 0.9);
   padding: 10px;
   margin: 10px;
-    }
+}
+
 
 nav {
 	font-family:'top_secretsans';
 	background-color:#15141A;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-inverse .navbar-nav > .active > li > a {
+    background-color: #444348;
 }
 
 ul {
@@ -55,14 +64,32 @@ h1 {
 	font-size: 3em;
 }
 
-img.resize {
-    width:120px; 
+.black-background {
+	background-color: rgba(0,0,0,0.9);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 25px;
+	width: 75%;
+}
+
+
+img.page-title {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+    width: 260px; 
     height: auto;
+	padding:0px;
 }
 
 img.about {
-    width:100%; 
+    width: 400px; 
     height: auto;
+	padding:0px;	
+}
+
+div.page-footer {
+	background-color: rgba(0,0,0,0.9)
 }
 
 .z-green {
@@ -84,3 +111,8 @@ img.about {
 .z-gray {
 	color:#31253D;
 }
+
+.no-padding {
+	padding:0px;
+}
+
