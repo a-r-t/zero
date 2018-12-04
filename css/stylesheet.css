@@ -36,7 +36,7 @@ nav {
 }
 
 .navbar-toggle .icon-bar {
-    background-color: #15141A;
+    background-color: #fff;
 }
 
 .navbar-inverse .navbar-nav > .active > li > a {
@@ -69,8 +69,16 @@ h1 {
 	padding: 10px;
 	margin: 10px;
 	border-radius: 25px;
+	width: 75%;
 }
 
+.green-background {
+	background-color: rgba(0,40,20,0.9);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 25px;
+	width: 75%;
+}
 
 img.page-title {
 	display: block;
@@ -88,7 +96,7 @@ img.about {
 }
 
 div.page-footer {
-	background-color:#15141A;
+	background-color: rgba(0,0,0,0.9)
 }
 
 .z-green {
@@ -110,3 +118,8 @@ div.page-footer {
 .z-gray {
 	color:#31253D;
 }
+
+.no-padding {
+	padding:0px;
+}
+
