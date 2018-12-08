@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -58,11 +58,12 @@
 			<!-- End Hamburger -->
 			<div class="navbar-collapse collapse" id="navbar">
 				<ul class="nav navbar-nav navbar-left nb-ul">
-					<li><a class="nb-a navbar-active" style="text-align:center;" href="index.html">Home</a></li>
+					<li><a class="nb-a" style="text-align:center;" href="index.html">Home</a></li>
 					<li><a class="nb-a" style="text-align:center;" href="news.html">News</a></li>
 					<li><a class="nb-a" style="text-align:center;" href="about.html">About</a></li>
 					<li><a class="nb-a" style="text-align:center;" href="music.html">Music</a></li>
 					<li><a class="nb-a" style="text-align:center;" href="calendar.html">Events</a></li>
+					<li><a class="nb-a navbar-active" style="text-align:center;" href="calendar.html">Merch</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right nb-ul">
 					<li><a class="nb-a" href="" onclick="changeLoginIconColor('click')" onmouseover="changeLoginIconColor('hover')" onmouseleave="changeLoginIconColor('leave')" style="text-align:center;"><span class="glyphicon glyphicon-log-in z-green" id="login-icon" style="margin-right:6px;"></span>Login</a></li>
@@ -71,44 +72,35 @@
 		</div>
 	</nav>
 	<!-- End Navbar -->
-	<!-- banner -->
-	<div align="center" width="100%" class="container-fluid no-padding">
-		<img src="assets/images/zombie_community_red_banner-transparent.png" alt="ZERO Banner" width="100%" style="margin-top:60px;margin-bottom:50px;">
+	
+	<div class="container text-center" style="margin-top:70px">pants that say zero on them
+	<!--Page Heading -->
+		<img class="page-title" src="assets/images/ZEROhead_merchandise.png" alt="About">
 	</div>
-	<!-- end banner -->
-	<!-- music -->
+	<!-- End of page heading -->
+	
+	<!-- clothing -->
 	<div align="center">
 		<div class="container-fluid green-background" align="center">
+			<h1 style="text-align:center;">Clothing</h1>
 			<div class="row" style="background:transparent;" align="center">
-				<h1 style="text-align:center;">Music</h1>
-				<div class="col-sm-3 col-sm-offset-3" style="margin-bottom:50px;">
-					<h2>Check out our newest album available now!</h2>
-					<h3 style="margin-top:30px;">Division 666</h3>
-					<img src="assets/images/zero-album-cover-1.png" alt="ZERO Album 1" class="img-responsive">
-				</div>
-				<div class="col-sm-3" style="margin-bottom:30px;">
-					<h2>Listen to our newest hit singles!</h2>
-					<h3 style="margin-top:30px;">Tom Foolery</h3>
-					<audio controls>
-						<source src="assets/music/Tom_Foolery.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-					</audio>
-					<h3 style="margin-top:30px;">Axe Grinder</h3>
-					<audio controls>
-						<source src="assets/music/Axe_Grinder.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-					</audio>
-					<h3 style="margin-top:30px;">Thirteen13</h3>
-					<audio controls>
-						<source src="assets/music/Thirteen13.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-					</audio>
+				<div class="col-sm-10" style="float:none;margin: 0 auto;">
+					<div class="row">
+						<div class="col-sm-4">
+							<img src="assets/images/zero-hoodie.jpg" alt="ZERO Hoodie" class="img-responsive" style="width:400px;">
+						</div>
+						<div class="col-sm-4">
+							<img src="assets/images/zero-tshirt.jpg" alt="ZERO Hoodie" class="img-responsive" style="width:400px;">
+						</div>
+						<div class="col-sm-4">
+							<img src="assets/images/zombie-killer-hoodie.jpg" alt="ZERO Hoodie" class="img-responsive" style="width:400px;">
+						</div>
+					</div>
 				</div>
 			</div>
-			<a class="btn btn-danger btn-lg" style="margin-bottom:30px;" href="music.html">Visit our Music page!</a>
 		</div>
 	</div>
-	<!-- end music -->
+	<!-- end clothing -->
 	<!-- community affiliations -->
 	<div align="center">
 		<div class="container-fluid green-background" align="center">
@@ -193,7 +185,6 @@
 	</div>
 	<!-- end footer -->
 	<script src="navbar.js"></script>
-	<script src="contact.js"></script>
 	<script src="audio.js"></script>
 	<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
   </body>
