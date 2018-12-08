@@ -39,11 +39,11 @@
   gtag('js', new Date());
   gtag('config', 'UA-130203027-1');
 </script>
-
+</head>
 <!-- /Google Analytics -->
 
 <body>
-<!-- Navbar -->
+	<!-- Navbar -->
 	<nav class="navbar navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Hamburger -->
@@ -57,15 +57,15 @@
 			</div>
 			<!-- End Hamburger -->
 			<div class="navbar-collapse collapse" id="navbar">
-				<ul class="nav navbar-inverse navbar-nav navbar-left nb-ul">
-					<li class="active"><a class="nb-a" href="index.html">Home</a></li>
-					<li><a class="nb-a" href="news.html">News</a></li>
-					<li><a class="nb-a" href="about.html">About</a></li>
-					<li><a class="nb-a" href="music.html">Music</a></li>
-					<li><a class="nb-a" href="calendar.html">Events</a></li>
+				<ul class="nav navbar-nav navbar-left nb-ul">
+					<li><a class="nb-a" style="text-align:center;" href="index.html">Home</a></li>
+					<li><a class="nb-a  navbar-active" style="text-align:center;" href="news.html">News</a></li>
+					<li><a class="nb-a" style="text-align:center;" href="about.html">About</a></li>
+					<li><a class="nb-a" style="text-align:center;" href="music.html">Music</a></li>
+					<li><a class="nb-a" style="text-align:center;" href="calendar.html">Events</a></li>
 				</ul>
-				<ul class="nav navbar-inverse navbar-right nb-ul">
-					<li><a class="nb-a" href="#"><span class="glyphicon glyphicon-log-in z-green"></span> Login</a></li>
+				<ul class="nav navbar-nav navbar-right nb-ul">
+					<li><a class="nb-a" href="" onclick="changeLoginIconColor('click')" onmouseover="changeLoginIconColor('hover')" onmouseleave="changeLoginIconColor('leave')" style="text-align:center;"><span class="glyphicon glyphicon-log-in z-green" id="login-icon" style="margin-right:6px;"></span>Login</a></li>
 				</ul>
 			</div>
 		</div>
