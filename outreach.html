@@ -43,7 +43,7 @@
 <!-- /Google Analytics -->
 
 <body>
-<!-- Navbar -->
+	<!-- Navbar -->
 	<nav class="navbar navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Hamburger -->
@@ -51,22 +51,26 @@
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="icon-bar z-green"></span> 				
 					<span class="icon-bar z-green"></span> 
-					<span class="icon-bar z-green"></span> 
+					<span class="icon-bar z-green"></span>
 				</button>
-				<a class="navbar-brand z-green" href="index.html">Z.E.R.O.</a> 
+				<a class="navbar-brand z-green" style="font-size:30px;" href="index.html">
+					<img class="navbar-brand img-responsive" src="assets/images/ZERO_Bio.png" alt="ZERO Logo" style="width:70px;height:70px;position:relative;top:-25px;left:-6px">
+					ZERO
+				</a>
 			</div>
 			<!-- End Hamburger -->
 			<div class="navbar-collapse collapse" id="navbar">
-                <ul class="nav navbar-inverse navbar-nav navbar-left nb-ul">
-                    <li class="active"><a class="nb-a" href="index.html">Home</a></li>
-                    <li><a class="nb-a" href="news.html">News</a></li>
-                    <li><a class="nb-a" href="about.html">About</a></li>
-                    <li><a class="nb-a" href="music.html">Music</a></li>
-                    <li><a class="nb-a" href="outreach.html">Outreach</a></li>
-                    <li><a class="nb-a" href="calendar.html">Events</a></li>
-                </ul>
-				<ul class="nav navbar-inverse navbar-right nb-ul">
-					<li><a class="nb-a" href="#"><span class="glyphicon glyphicon-log-in z-green"></span> Login</a></li>
+				<ul class="nav navbar-nav navbar-left nb-ul">
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="index.html">Home</a></li>
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="about.html">About</a></li>
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="music.html">Music</a></li>
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="merch.html">Merch</a></li>
+					<li><a class="nb-a navbar-active" style="text-align:center;font-size:20px;" href="community.html">Community</a></li>
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="news.html">News</a></li>
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="calendar.html">Events</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right nb-ul">
+					<li><a class="nb-a" href="" onclick="changeLoginIconColor('click')" onmouseover="changeLoginIconColor('hover')" onmouseleave="changeLoginIconColor('leave')" style="text-align:center;font-size:20px;"><span class="glyphicon glyphicon-log-in z-green" id="login-icon" style="margin-right:6px;font-size:16px;"></span>Login</a></li>
 				</ul>
 			</div>
 		</div>
@@ -83,19 +87,18 @@
             <div class="container-fluid green-background" align="center">
                 <div class="container-fluid" align="center">
                     <div class="col-sm-5" style="text-align:center;">
-                        <img class="news float-left" src="assets/images/thermometer-funds.jpg" alt="thermometer-funds" width="50%"
-                             style="margin-left:auto; margin-top: 10%">
+                        <img class="news float-left" src="assets/images/Printable-Thermometer-Design-with-Numbers_transp" alt="thermometer-funds" width="25%"
+                             style="margin-left:auto; margin-top: 10%;">
                     </div>
                     <div class="col-sm-6">
                         <h1 class="text-center"><u><b>Monthly Promoted Organization</b></u></h1>
                         <h4 class="text-left">12/1/18</h4>
-                        <p class="text-left">With the holiday season upon us, Z.E.R.O has partnered with a great organization called, 
-                        "Boston Resuce Mission". This organization has been doing a great job with assiting the homeless.
-                        They started in 1899 and has been going strong ever since!</p>
-                        <p class="text-left">Please help us hit out goal of 4,000 pairs of socks!</p>
+                        <p class="text-left">With the holiday season upon us, Z.E.R.O has partnered with a great organization called 
+                        "Boston Resuce Mission". This organization, formed in 1899, has been doing a great job with assisting the homeless.</p>
+                        <p class="text-left">Please help us hit our goal of 4,000 pairs of socks!</p>
                         <br />
                         <p class="text-left">
-                            Boston Rescue Mission has made it extremly easy to donate socks by using Amazon!<br />
+                            Boston Rescue Mission has made it extremely easy to donate socks by using Amazon!<br />
                             <br />If you would like to donate, please click <a href="https://smile.amazon.com/hz/wishlist/ls/S2EU8E206QAA?&sort=default">HERE</a>
                             <br /><p class="text-center"If you want to learn how to become involved, <br /><a href="https://www.brm.org/">visit their website</a></p>
 
@@ -105,14 +108,11 @@
                 </div>
                 <hr />
                 <div class="container-fluid" align="center">
-                    <h1 class="text-center"><u><b>Past News</b></u></h1>
+                    <h1 class="text-center"><u><b>For those who are looking for training</b></u></h1>
                     <div class="col-sm-6">
                         <div class="col-sm-6">
-                            <h4 class="text-center">9/17/18</h4>
                             <p>
-                                The new class of EMT's are learning how to backboard...
-                                <br>
-                                <br>Click here to read more.
+								<br /><br /><br /> <p class="text-center">EMT & CPR classes in CT: <br /><a href="http://ctemsclasses.com/">CPR Professionals</a></p>
                             </p>
                         </div>
                         <div class="col-sm-6">
@@ -121,60 +121,63 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="col-sm-6">
-                            <h4 class="text-center">5/17/18</h4>
                             <p>
-                                How often can you say that you can participate in a Zombie Live Action Role Play with your favorite band...
-                                <br>
-                                <br>Click here to read more.
+								<br /><br /><br /> <p class="text-center">EMT Classes in MA: <br /><a href="https://www.mass.gov/service-details/find-an-accredited-emt-training-institution">MASS gov website</a></p>
                             </p>
                         </div>
                         <div class="col-sm-6">
-                            <img class="news float-left" src="assets/images/zombielarp01.jpg" alt="Date:9/17/18" width="100%">
+                            <img class="news float-left" src="assets/images/emt-training-2.jpg" alt="Date:9/17/18" width="110%">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="col-sm-6">
-                            <h4 class="text-center"> 2/24/18</h4>
                             <p>
-                                It's great to be back on the road, seeing all of our beloved fans! We have a lot planned for the year 2018...
-                                <br>
-                                <br>Click here to read more.
+								<br /><br /><br /> <p class="text-center">CPR Classes in MA: <br /><a href="https://www.redcross.org/local/massachusetts/take-a-class/cpr">American Red Cross website</a></p>
                             </p>
                         </div>
                         <div class="col-sm-6">
-                            <img class="news float-left" src="assets/images/zeroBar.jpg" alt="zeroBar" width="100%">
+                            <img class="news float-left" src="assets/images/cpr-training-1.jpg" alt="Date:9/17/18" width="100%; center">
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="col-sm-6">
-                            <h4 class="text-center">12/17/17</h4>
-                            <p>
-                                ZERO had a great night in Hartford CT! They always enjoy coming back to their roots...
-                                <br>
-                                <br>Click here to read more.
-                            </p>
-                        </div>
-                        <div class="col-sm-6">
-                            <img class="news float-left" src="assets/images/band1.jpg" alt="12/17/17" width="100%">
-                        </div>
-                    </div>
+
                 </div>
                 <hr />
                 <div align="center">
 					<div class="list-group">
-						<h1 class="text-center"><u><b>Archives</b></u></h1>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success archive">January 2, 2016</a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success archive">January 15, 2016</a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success archive">June 5, 2016</a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success archive">July 2, 2016</a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success archive">July 3, 2016</a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success archive">October 14, 2016</a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success archive">November 20, 2016</a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success archive">December 3, 2016</a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success archive">January 13, 2017</a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success archive">June 24, 2017</a>
+						<h1 class="text-center"><u><b>Zombie LARP Events</b></u></h1>
+							<div class="col-sm-15">
+								<p>
+									 <p class="text-center">Z.E.R.O. plans on participating at a few of these events this year! Check out our calendar
+										for when we will be there! <br /><a href="calendar.html">Events Page</a></p>
+								</p>
+							</div>
+						<div class="col-sm-6; align:center">
+                            <img class="news float-left" src="assets/images/zombielarp01.jpg" alt="zombielarp01" width="30%;">
+							<img class="news float-left" src="assets/images/zombie-survival-training-1.jpg" alt="zombie-survival-training-1.jpg" width="40%;">
+                        </div>
+						<div>
+							<p class="text-center">Come Join in on the fun! <br /><a href="http://www.dystopiarisinglarp.com/">Dystopia Rising Website</a></p>
+						</div>
 					</div>
 				</div>
+				<hr />
+				<div align="center">
+					<div class="list-group">
+						<h1 class="text-center"><u><b>Charity Associations</b></u></h1>
+							<div class="col-sm-15">
+								<p>
+									 <p class="text-center">Z.E.R.O. recognizes that there are many different charities and organizations out there. Along with our monthly promoted charity, Z.E.R.O. would like to spread the awareness of transplant and the profound impact on a individual, family and community when a match is made.</p>
+								</p>
+							</div>
+						<div class="col-sm-6; align:center">
+                            <img class="news float-left" src="assets/images/donateLife.jpg" alt="donateLife" width="30%;">
+                        </div>
+						<div>
+							<p class="text-center">Please visit their webpage <br /><a href="https://www.donatelife.net/">Donate Life America</a></p>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -193,5 +196,6 @@
 		</div>
 	</div>
 	<!-- end footer -->
+	<script src="navbar.js"></script>
 </body>
 </html>
