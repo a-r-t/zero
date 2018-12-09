@@ -162,7 +162,7 @@ div.page-footer {
   border-left-color: #111111;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1330px) {
     .navbar-header {
         float: none;
     }
