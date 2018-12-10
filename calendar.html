@@ -46,36 +46,47 @@
         center: 'title',
         right: 'month,basicWeek,basicDay'
       },
+	  dayRender: function (date, cell) {
+        cell.css("color", "#A6B556");
+      },
       defaultDate: '2018-12-01',
       navLinks: true, // can click day/week names to navigate views
       editable: true,
       eventLimit: true, // allow "more" link when too many events
+	  eventSources: [
+    {
+      url: "assets/fullcalendar/events.json"
+    }
+  ],
       events: [
         {
-          title: 'All Day Event',
-          start: '2018-12-01'
+          title: 'Zombie LARP',
+          start: '2018-12-01',
+		  color: '#A7323B'
         },
         {
-          title: 'Long Event',
-          start: '2018-03-07',
-          end: '2018-03-10'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-09T16:00:00'
+          title: 'FDNY CPR Training',
+          start: '2018-12-07T16:00:00',
+          end: '2018-12-09T13:00:00'
         },
         {
           id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-16T16:00:00'
+          title: 'First Aid Training',
+          start: '2018-12-09T16:00:00'
         },
         {
-          title: 'Conference',
-          start: '2018-03-11',
-          end: '2018-03-13'
+          id: 999,
+          title: 'First Aid Training',
+          start: '2018-12-16T16:00:00'
+        },
+        {
+          title: 'Concert',
+          start: '2018-12-13T17:00:00',
+          end: '2018-12-13T22:30:00',
+		  color: '#A6B556'
         }
-      ]
+      ],
+	eventTextColor: '#15141A'
     });
 
   });
@@ -86,7 +97,7 @@
   #calendar {
     color:#A6B556;
   }
-
+	
 </style>
 <!-- End of calendar setup ->>
 
@@ -167,6 +178,6 @@
             </div>
         </div>
     </div>
-</div>
     <!-- end footer -->
+</body>
 </html>

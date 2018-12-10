@@ -1,0 +1,16 @@
+{
+  events: [
+    {
+      title: 'Event1',
+      start: '2018-12-04'
+    },
+    {
+      title: 'Event2',
+      start: '2018-12-05',
+	  color: 'yellow',   // an option!
+      textColor: 'black' // an option!
+    }
+
+  ]
+
+}
