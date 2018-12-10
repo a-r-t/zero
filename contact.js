@@ -17,7 +17,7 @@ function sendMessage() {
 		isDataValid = false;
 		$('#messageToUser').css("color","red");
 	}
-	else if (!email.match("[A-Za-z0-9]{1,}@[A-Za-z0-9]{1,}\.com")) {
+	else if (!email.match("[A-Za-z0-9]{1,}@[A-Za-z0-9]{1,}\.[A-Za-z0-9]{1,}")) {
 		$('#messageToUser').text("Email is not in a valid format!");
 		isDataValid = false;
 		$('#messageToUser').css("color","red");

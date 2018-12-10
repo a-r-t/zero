@@ -15,17 +15,11 @@
 <!-- Font Awesome Link -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-<!-- FullCalendar assets -->
-<link href="css/fullcalendar.min.css" rel="stylesheet" />
-<link href="css/fullcalendar.print.min.css" rel="stylesheet" media="print" />
-<script src="assets/fullcalendar/moment.min.js"></script>
-<script src="assets/fullcalendar/fullcalendar.min.js"></script>
 
 <!-- Local assets -->
 <link rel="stylesheet" href="css/stylesheet.css">
 <meta name="description" content="Join the Journey">
-<title>ZERO Events</title>
+<title>ZERO Event</title>
 <link rel="shortcut icon" href="assets/images/ZERO_Bio_low.png" type="image/x-icon">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -34,61 +28,6 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#63203F">
 <meta name="msapplication-TileColor" content="#A7323B">
 <meta name="theme-color" content="#DBD7D7">
-	
-<!-- Initialize the calendar -->
-<script>
-
-  $(document).ready(function() {
-
-    $('#calendar').fullCalendar({
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,basicWeek,basicDay'
-      },
-      defaultDate: '2018-12-01',
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-      events: [
-        {
-          title: 'All Day Event',
-          start: '2018-12-01'
-        },
-        {
-          title: 'Long Event',
-          start: '2018-03-07',
-          end: '2018-03-10'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-09T16:00:00'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-16T16:00:00'
-        },
-        {
-          title: 'Conference',
-          start: '2018-03-11',
-          end: '2018-03-13'
-        }
-      ]
-    });
-
-  });
-
-</script>
-<style>
-
-  #calendar {
-    color:#A6B556;
-  }
-
-</style>
-<!-- End of calendar setup ->>
 
 <!-- Google Analytics -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -105,7 +44,7 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+	<!-- Navbar -->
 	<nav class="navbar navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Hamburger -->
@@ -128,9 +67,9 @@
 					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="music.html">Music</a></li>
 					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="lyrics.html">Lyrics/Tabs</a></li>
 					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="merch.html">Merch</a></li>
-					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="community.html">Community</a></li>
+					<li><a class="nb-a navbar-active" style="text-align:center;font-size:20px;" href="community.html">Community</a></li>
 					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="news.html">News</a></li>
-					<li><a class="nb-a navbar-active" style="text-align:center;font-size:20px;" href="calendar.html">Events</a></li>
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="calendar.html">Events</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right nb-ul">
 					<li><a class="nb-a" href="" onclick="changeLoginIconColor('click')" onmouseover="changeLoginIconColor('hover')" onmouseleave="changeLoginIconColor('leave')" style="text-align:center;font-size:20px;"><span class="glyphicon glyphicon-log-in z-green" id="login-icon" style="margin-right:6px;font-size:16px;"></span>Login</a></li>
@@ -142,17 +81,13 @@
 
 <div class="container text-center" style="margin-top:70px">
 <!--Page Heading -->
-	<img class="page-title" src="assets/images/ZEROhead_events.png" alt="About">
+	<img class="page-title" src="assets/images/ZEROhead_community.png" alt="About">
 </div>
 <!-- End of page heading -->
 <div align="center">
-  <div class="row green-background">
-
-    <div id="calendar"></div>
-
-  </div>
- </div>
-
+<div class="container-fluid green-background">	
+  <div class="row"></div>
+</div>
     <!-- footer -->
     <div align="center">
         <div class="container-fluid green-background" style="margin-bottom:50px">
@@ -169,4 +104,5 @@
     </div>
 </div>
     <!-- end footer -->
+</body>
 </html>

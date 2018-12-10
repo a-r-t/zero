@@ -44,30 +44,35 @@
 </head>
 
 <body>
-<!-- Navbar -->
+	<!-- Navbar -->
 	<nav class="navbar navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Hamburger -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar z-green"></span> 				
 					<span class="icon-bar z-green"></span> 
-					<span class="icon-bar z-green"></span> 
+					<span class="icon-bar z-green"></span>
 				</button>
-				<a class="navbar-brand z-green" href="index.html">Z.E.R.O.</a> 
+				<a class="navbar-brand z-green" style="font-size:30px;" href="index.html">
+					<img class="navbar-brand img-responsive" src="assets/images/ZERO_Bio.png" alt="ZERO Logo" style="width:70px;height:70px;position:relative;top:-25px;left:-6px">
+					ZERO
+				</a>
 			</div>
 			<!-- End Hamburger -->
 			<div class="navbar-collapse collapse" id="navbar">
-				<ul class="nav navbar-inverse navbar-nav navbar-left nb-ul">
-					<li><a class="nb-a" href="index.html">Home</a></li>
-					<li><a class="nb-a" href="news.html">News</a></li>
-					<li class="z-active"><a class="nb-a" href="about.html">About</a></li>
-					<li><a class="nb-a" href="music.html">Music</a></li>
-					<li><a class="nb-a" href="calendar.html">Events</a></li>
+				<ul class="nav navbar-nav navbar-left nb-ul">
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="index.html">Home</a></li>
+					<li><a class="nb-a navbar-active" style="text-align:center;font-size:20px;" href="about.html">About</a></li>
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="music.html">Music</a></li>
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="lyrics.html">Lyrics/Tabs</a></li>
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="merch.html">Merch</a></li>
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="community.html">Community</a></li>
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="news.html">News</a></li>
+					<li><a class="nb-a" style="text-align:center;font-size:20px;" href="calendar.html">Events</a></li>
 				</ul>
-				<ul class="nav navbar-inverse navbar-right nb-ul">
-					<li><a class="nb-a" href="#"><span class="glyphicon glyphicon-log-in z-green"></span> Login</a></li>
+				<ul class="nav navbar-nav navbar-right nb-ul">
+					<li><a class="nb-a" href="" onclick="changeLoginIconColor('click')" onmouseover="changeLoginIconColor('hover')" onmouseleave="changeLoginIconColor('leave')" style="text-align:center;font-size:20px;"><span class="glyphicon glyphicon-log-in z-green" id="login-icon" style="margin-right:6px;font-size:16px;"></span>Login</a></li>
 				</ul>
 			</div>
 		</div>
@@ -81,11 +86,11 @@
 <!-- End of page heading -->
 <div align="center">
 <div class="container-fluid green-background">	
-  <div class="row text-center">
+  <div class="row" style="padding:10px 5px">
     <h3>Why Z.E.R.O. ?</h3>
-	  <p style="font-size:130%;">In 2007, a small group of musicians met in one of the most unlikely places on earth: war-torn Afghanistan. While working together, they began playing music in their off-time, and so began a band...</p>
-<p style="font-size:130%;">After they returned to the United States, they began playing in clubs, but they wanted to do more for their community. With their varied experiences in far-flung places around the world where no emergency services existed, the band wanted to ensure that the people who loved their music were also able to help local emergency responsders during emergencies.</p>
-<p style="font-size:130%;">And so, renaming themselves Zombie Emergency Response Organization, the band dedidcated their time and energy toward making sure their fans were prepared - <strong>Zombie Prepared!</strong></p>
+		<p style="font-size:130%;">In 2007, a small group of musicians met in one of the most unlikely places on earth: war-torn Afghanistan. While working together, they began playing music in their off-time, and so began a band...</p>
+		<p style="font-size:130%;">After they returned to the United States, they began playing in clubs, but they wanted to do more for their community. With their varied experiences in far-flung places around the world where no emergency services existed, the band wanted to ensure that the people who loved their music were also able to help local emergency responsders during emergencies.</p>
+		<p style="font-size:130%;">And so, renaming themselves Zombie Emergency Response Organization, the band dedidcated their time and energy toward making sure their fans were prepared - <strong>Zombie Prepared!</strong></p>
   </div>
 </div>
 
@@ -207,5 +212,6 @@ And that’s why carrying a gun is a civilized act."</p>
 	</div>
 	<!-- end footer -->
 	</div>
+	<script src="navbar.js"></script>
 </body>
 </html>
