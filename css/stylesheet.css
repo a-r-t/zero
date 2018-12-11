@@ -163,7 +163,7 @@ div.page-footer {
 }
 
 /* @media (max-width: 1160px) { this was different in Nikko's push. If it needs to be adjusted, this is his version */
-@media (max-width: 1330px) {
+@media (max-width: 1340px) {
     .navbar-header {
         float: none;
     }
