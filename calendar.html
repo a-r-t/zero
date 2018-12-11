@@ -37,225 +37,222 @@
 	
 <!-- Initialize the calendar -->
 <script>
-
   $(document).ready(function() {
-
-    $('#calendar').fullCalendar({
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,basicWeek,basicDay'
-      },
-	  dayRender: function (date, cell) {
-        cell.css("color", "#A6B556");
-      },
-      defaultDate: '2018-12-01',
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-	  eventSources: [
-    {
-      url: "assets/fullcalendar/events.json"
-    }
-  ],
-      events: [
-        {
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2018-12-01',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
+    $('#calendar').fullCalendar(
+	{
+		header: {
+		left: 'prev,next today',
+		center: 'title',
+		right: 'month,basicWeek,basicDay'
+	},
+	dayRender: function (date, cell) {
+		cell.css("color", "#A6B556");
+	},
+	defaultDate: '2018-12-01',
+	navLinks: true, // can click day/week names to navigate views
+	editable: true,
+	eventLimit: true, // allow "more" link when too many events
+	eventSources: [
 		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2018-12-08',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2018-12-15',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2018-12-22',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2018-12-29',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2019-01-05',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2019-01-12',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2019-01-19',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2019-01-26',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2019-02-02',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2019-02-09',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2019-02-16',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2019-02-23',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-		{
-          id: 666,
-		  title: 'Zombie LARP',
-          start: '2019-03-02',
-		  color: '#A7323B',
-		  allDay: 'true',
-	      url: 'http://www.dystopiarisinglarp.com/'
-        },
-        {
-          title: 'FDNY CPR Training',
-          start: '2018-12-07T16:00:00',
-          end: '2018-12-09T13:00:00',
-		  url: 'https://www1.nyc.gov/site/fdny/education/cpr/cpr.page'
-        },
-        {
-          id: 999,
-          title: 'First Aid Training',
-          start: '2018-12-09T16:00:00',
-		  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
-        },
-        {
-          id: 999,
-          title: 'First Aid Training',
-          start: '2018-12-16T16:00:00',
-		  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
-        },
-		{
-          id: 999,
-          title: 'First Aid Training',
-          start: '2018-12-30T16:00:00',
-		  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
-        },
-		{
-          id: 999,
-          title: 'First Aid Training',
-          start: '2019-01-06T16:00:00',
-		  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
-        },
-		{
-          id: 999,
-          title: 'First Aid Training',
-          start: '2019-01-13T16:00:00',
-		  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
-        },
-		{
-          id: 999,
-          title: 'First Aid Training',
-          start: '2019-01-20T16:00:00',
-		  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
-        },
-		{
-          id: 999,
-          title: 'First Aid Training',
-          start: '2019-01-27T16:00:00',
-		  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
-        },
-		{
-          id: 999,
-          title: 'First Aid Training',
-          start: '2019-02-03T16:00:00',
-		  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
-        },
-        {
-          title: 'ZERO Concert',
-          start: '2018-12-13T17:00:00',
-          end: '2018-12-13T22:30:00',
-		  color: '#A6B556',
-	      url: 'https://www.ticketmaster.com/madison-square-garden-tickets-new-york/venue/483329'
-        },
-	    {
-          title: 'FDNY CPR Training',
-          start: '2019-01-11T16:00:00',
-          end: '2019-01-13T13:00:00',
-		  url: 'https://www1.nyc.gov/site/fdny/education/cpr/cpr.page'
-        },
-		{
-          title: 'ZERO Concert',
-          start: '2018-12-31T17:00:00',
-          end: '2018-12-31T22:30:00',
-		  color: '#A6B556',
-	      url: 'https://www.tacomadome.org/events'
-        },
-		{
-          title: 'ZERO Concert',
-          start: '2019-01-29T17:00:00',
-          end: '2019-01-29T22:30:00',
-		  color: '#A6B556',
-	      url: 'https://blaisdellcenter.com/venues/waikiki-shell/'
-        }
-      ],
-	eventTextColor: '#15141A'
+		  url: "assets/fullcalendar/events.json"
+		}
+	],
+	events: [
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2018-12-01',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2018-12-08',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2018-12-15',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2018-12-22',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2018-12-29',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2019-01-05',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2019-01-12',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2019-01-19',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2019-01-26',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2019-02-02',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2019-02-09',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2019-02-16',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2019-02-23',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  id: 666,
+	  title: 'Zombie LARP',
+	  start: '2019-03-02',
+	  color: '#A7323B',
+	  allDay: 'true',
+	  url: 'http://www.dystopiarisinglarp.com/'
+	},
+	{
+	  title: 'FDNY CPR Training',
+	  start: '2018-12-07T16:00:00',
+	  end: '2018-12-09T13:00:00',
+	  url: 'https://www1.nyc.gov/site/fdny/education/cpr/cpr.page'
+	},
+	{
+	  id: 999,
+	  title: 'First Aid Training',
+	  start: '2018-12-09T16:00:00',
+	  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
+	},
+	{
+	  id: 999,
+	  title: 'First Aid Training',
+	  start: '2018-12-16T16:00:00',
+	  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
+	},
+	{
+	  id: 999,
+	  title: 'First Aid Training',
+	  start: '2018-12-30T16:00:00',
+	  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
+	},
+	{
+	  id: 999,
+	  title: 'First Aid Training',
+	  start: '2019-01-06T16:00:00',
+	  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
+	},
+	{
+	  id: 999,
+	  title: 'First Aid Training',
+	  start: '2019-01-13T16:00:00',
+	  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
+	},
+	{
+	  id: 999,
+	  title: 'First Aid Training',
+	  start: '2019-01-20T16:00:00',
+	  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
+	},
+	{
+	  id: 999,
+	  title: 'First Aid Training',
+	  start: '2019-01-27T16:00:00',
+	  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
+	},
+	{
+	  id: 999,
+	  title: 'First Aid Training',
+	  start: '2019-02-03T16:00:00',
+	  url: 'https://www.redcross.org/take-a-class/first-aid/first-aid-training'
+	},
+	{
+	  title: 'ZERO Concert',
+	  start: '2018-12-13T17:00:00',
+	  end: '2018-12-13T22:30:00',
+	  color: '#A6B556',
+	  url: 'https://www.ticketmaster.com/madison-square-garden-tickets-new-york/venue/483329'
+	},
+	{
+	  title: 'FDNY CPR Training',
+	  start: '2019-01-11T16:00:00',
+	  end: '2019-01-13T13:00:00',
+	  url: 'https://www1.nyc.gov/site/fdny/education/cpr/cpr.page'
+	},
+	{
+	  title: 'ZERO Concert',
+	  start: '2018-12-31T17:00:00',
+	  end: '2018-12-31T22:30:00',
+	  color: '#A6B556',
+	  url: 'https://www.tacomadome.org/events'
+	},
+	{
+	  title: 'ZERO Concert',
+	  start: '2019-01-29T17:00:00',
+	  end: '2019-01-29T22:30:00',
+	  color: '#A6B556',
+	  url: 'https://blaisdellcenter.com/venues/waikiki-shell/'
+	}],
+	  eventTextColor: '#15141A'
     });
-
   });
 
 </script>
@@ -319,18 +316,16 @@
 	</nav>
 	<!-- End Navbar -->
 
-<div class="container text-center" style="margin-top:70px">
-<!--Page Heading -->
-	<img class="page-title" src="assets/images/ZEROhead_events.png" alt="About">
-</div>
-<!-- End of page heading -->
-<div align="center">
-  <div class="row green-background">
-
-    <div id="calendar"></div>
-
-  </div>
- </div>
+	<div class="container text-center" style="margin-top:70px">
+	<!--Page Heading -->
+		<img class="page-title" src="assets/images/ZEROhead_events.png" alt="About">
+	</div>
+	<!-- End of page heading -->
+	<div align="center">
+	  <div class="row green-background">
+		<div id="calendar"></div>
+	  </div>
+	</div>
 
     <!-- footer -->
     <div align="center">
